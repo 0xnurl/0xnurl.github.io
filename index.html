@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nur Lan</title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Spectral:400,400i,500,600,600i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Nur,Geffen,Lan,נור,לן,גפן">
+    <meta name="google-site-verification" content="iDtWEEHSvPcsPiILtZZUOgw8ER1pLuHwQ6UxZuxSpNs"/>
+    <style>
+        :root {
+            --light-bg-color: whitesmoke;
+            --light-text-color: #404040;
+            --light-link-color: #4f9243;
+
+            --dark-bg-color: #242828;
+            --dark-text-color: #e7e3dc;
+            --dark-link-color: #85d578;
+
+            --bg-color: var(--light-bg-color);
+            --link-color: var(--light-link-color);
+            --text-color: var(--light-text-color);
+
+            --dark-drop-shadow: #5b5b5b;
+        }
+
+        @media screen and (max-width: 800px) {
+            .single-column {
+                max-width: 95%;
+            }
+
+            .inner-wrapper {
+                padding: 35px;
+            }
+
+            .two-column {
+                flex-direction: column-reverse;
+                max-width: 95%;
+            }
+
+            .right-column {
+                display: flex;
+                flex-direction: column;
+                max-width: 95%;
+                margin: 15px 0 5px 0;
+                align-items: center;
+                justify-content: left;
+            }
+
+            .image {
+                width: 90%;
+            }
+
+            .image-caption {
+                margin-bottom: 15px;
+            }
+
+            .left-column {
+                max-width: 95%;
+            }
+
+            .section-link {
+                margin: 0 9px 10px 0;
+            }
+
+
+        }
+
+        @media screen and (min-width: 1500px) {
+            .inner-wrapper {
+                width: 70%;
+            }
+        }
+
+
+        @media screen and (min-width: 800px) {
+            .inner-wrapper {
+                padding: 75px;
+            }
+
+            .single-column {
+                max-width: 67%;
+            }
+
+            .two-column {
+                flex-direction: row;
+                max-width: 95%;
+            }
+
+            .right-column {
+                max-width: 40%;
+                margin-left: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                padding-top: 15px;
+            }
+
+            .image {
+                width: 85%;
+                margin-bottom: 15px;
+            }
+
+            .image-caption {
+                margin-bottom: 27px;
+                margin-left: 5px;
+
+            }
+
+            .left-column {
+                max-width: 60%;
+            }
+
+            .section-link {
+                margin: 0 23px 10px 0;
+            }
+
+        }
+
+        html {
+            height: 100%
+        }
+
+        body {
+            font-family: "Spectral", serif;
+            color: var(--text-color);
+            margin: 0;
+            height: 100%;
+            padding: 0;
+            background-color: var(--bg-color);
+            font-size: 1.2em;
+        }
+
+        .main-wrapper {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            font-size: 1.7em;
+            font-weight: 600;
+        }
+
+        .sections-wrapper {
+            display: flex;
+            flex-direction: row;
+            margin-top: 23px;
+            flex-flow: wrap;
+        }
+
+        .section-link {
+            font-size: 1em;
+        }
+
+        .section-link a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .section-link a:visited {
+            color: var(--text-color);
+        }
+
+        .section-link a:hover {
+            color: var(--link-color);
+            text-decoration: underline;
+            background-color: unset;
+        }
+
+        .section {
+            margin-top: 35px;
+            font-size: 1.3em;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .subsection {
+            margin-top: 30px;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .subsection-ref {
+            margin-top: 12px;
+            font-size: 1em;
+        }
+
+        .section-text {
+            font-size: 1em;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-top: 35px;
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        .two-column {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-caption {
+            width: 80%;
+            font-size: 0.8em;
+            margin-top: 3px;
+            text-align: center;
+        }
+
+        .paragraph {
+            margin-top: 0.8em;
+            margin-bottom: 1em;
+        }
+
+        li {
+            margin-bottom: 11px;
+        }
+
+        a {
+            padding: 0 1px 0 1px;
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: var(--link-color);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .email {
+            margin: 5px 0 0 40px;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="inner-wrapper">
+        <div class="single-column">
+            <div class="header">Nur Lan</div>
+            <div class="sections-wrapper">
+                <div class="section-link"><a href="#about">About</a></div>
+                <div class="section-link"><a href="#projects">Projects</a></div>
+                <div class="section-link"><a href="#papers">Papers</a></div>
+                <div class="section-link"><a href="#contact">Contact</a></div>
+                <div class="section-link"><a href="#misc">Misc.</a></div>
+            </div>
+            <div id="about" class="section">About</div>
+
+            <div class="section-text">
+                <div class="paragraph">I am a PhD candidate in linguistics and cognitive science at the Ecole Normale
+                    Sup&eacute;rieure
+                    in Paris and Tel Aviv University, co-advised by <a target="_blank"
+                                                                       href="http://www.emmanuel.chemla.free.fr/">Emmanuel
+                        Chemla</a> (ENS) and <a target="_blank"
+                                                href="https://english.tau.ac.il/profile/rkatzir">Roni
+                        Katzir</a> (TAU). My PhD is funded by the <a target="_blank"
+                                                                     href="http://ed3c.upmc.fr/index.php/">ED3C</a>.
+                </div>
+                <div class="paragraph">I am mainly interested in building computational models that try to learn natural
+                    language in the same way we think humans do. I am also interested in the evolution of language,
+                    formal language
+                    theory, information theory, as well as in animal linguistics and comparative cognition, and I
+                    like combining these fields in thinking about the origins of the human language capacity.
+                </div>
+                <div class="paragraph">I did my master's in <a target="_blank" href="https://taucompling.github.io/">computational
+                    linguistics</a> under the supervision of Roni Katzir, after completing a bachelor's
+                    degree in Computer Science (double-major with a BA in Film), both at Tel Aviv University. In
+                    between I worked for several tech companies in Tel Aviv, and as an editor and writer in Israeli
+                    press.
+                </div>
+            </div>
+            <div id="projects" class="section">Projects</div>
+            <div class="subsection">Minimum Description Length Recurrent Neural Networks</div>
+            <div class="subsection-ref">With Michal Geyer, Emmanuel Chemla & Roni Katzir
+            </div>
+
+        </div>
+        <div class="two-column">
+            <div class="left-column">
+                <div class="section-text">
+                    <div class="paragraph">Neural networks are remarkably successful, but still fail on tasks which are very easy for humans,
+                        like understanding simple regularities such as <i>10101010...</i> or <i>aaabbb...</i>, and
+                        learning basic arithmetic operations like addition and multiplication.
+                    </div>
+                    <div class="paragraph">To make networks generalize better, we replace standard objectives with a computable version of Kolmogorov Complexity, the
+                        Minimum Description Length principle (MDL), which balances the network's architecture size
+                        with its accuracy.
+                    </div>
+                    <div class="paragraph">Using an evolutionary architecture search guided by MDL, we find small and perfect networks that can handle tasks which are
+                        notoriously hard
+                        for traditional networks, like basic addition, and recognition of formal languages such as
+                        <i>a<sup>n</sup>b<sup>n</sup></i>,
+                        <i>a<sup>n</sup>b<sup>2n</sup></i>, <i>a<sup>n</sup>b<sup>m</sup>c<sup>n+m</sup></i>,
+                        and <i>a<sup>n</sup>b<sup>n</sup>c<sup>n</sup></i>. MDL networks are very small, and often
+                        contain only one or two hidden units, which makes it possible to prove that they are correct
+                        for all strings. No other neural network that we know of has been proven do to that.
+                    </div>
+                </div>
+
+                <div class="section-text">
+                    <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00489/112499/Minimum-Description-Length-Recurrent-Neural"
+                       target="_blank">Paper</a>, <a href="https://github.com/taucompling/mdlrnn"
+                                                     target="_blank">Code</a>
+                </div>
+
+            </div>
+            <div class="right-column">
+                <div class="image-wrapper">
+                    <img id="net-addition" alt="addition network" class="image" src="addition.png">
+                    <div class="image-caption">Addition network</div>
+                </div>
+                <div class="image-wrapper">
+                    <img id="net-anbncn" alt="anbncn network" class="image" src="anbncn.png">
+                    <div class="image-caption"><i>a<sup>n</sup>b<sup>n</sup>c<sup>n</sup></i> network</div>
+                </div>
+            </div>
+        </div>
+        <div class="single-column">
+            <div class="subsection" style="margin-top: 25px;">Large Language Models and the Argument From the Poverty of
+                the Stimulus
+            </div>
+            <div class="subsection-ref" style="font-size: 1em">With Emmanuel Chemla & Roni Katzir
+            </div>
+        </div>
+        <div class="two-column">
+            <div class="left-column">
+                <div class="section-text">
+                    <div class="paragraph">
+                        Modern language models are trained on huge corpora that amount to years or even
+                        lifetimes of human linguistic experience. Can we use this fact to learn about the initial state
+                        of a human child acquiring language?
+                    </div>
+                    <div class="paragraph">
+                        Building on work by Wilcox et al. (2022), we examine the knowledge of four state-of-the-art
+                        language models, including GPT-3,
+                        regarding important syntactic constraints.
+                        We find that all these models fail to acquire an adequate knowledge of these phenomena,
+                        delivering predictions that clash with the judgments of human speakers. Since these models
+                        are trained on data that go above and beyond the linguistic experience of children, our findings
+                        support the claim that children are equipped with innate linguistic biases that these models
+                        don't have.
+                    </div>
+                </div>
+                <div class="section-text">
+                    <a href="https://lingbuzz.net/lingbuzz/006829"
+                       target="_blank">Paper</a>
+                </div>
+
+
+            </div>
+            <div class="right-column">
+                <div class="image-wrapper" style="align-content: start">
+                    <img class="image"
+                         alt="Surprisal values for 'Who did the fact that Mary remembered surprise yesterday/*you'"
+                         style="width:95%;" id="gpt3" src="gpt3.png">
+                    <div class="image-caption">GPT-3's surprisal values for a grammatical parasitic gap sentence (blue)
+                        and its ungrammatical variant (red)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-column">
+            <div id="papers" class="section">Papers and manuscripts</div>
+            <div class="section-text">
+                <ul>
+                    <li>Lan, Nur, Emmanuel Chemla, and Roni Katzir. <a target="_blank" href="https://arxiv.org/abs/2308.08253">Benchmarking Neural Network Generalization for Grammar Induction.</a> <i>Proceedings of the 2023 CLASP Conference on Learning with Small Data (LSD)</i>: Association for Computational Linguistics, 131–40. 2023.
+                    </li>
+
+                    <li>Lan, Nur, Michal Geyer, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
+                                                                                     href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00489/112499/Minimum-Description-Length-Recurrent-Neural">Minimum
+                        Description Length Recurrent Neural Networks</a>. <i>Transactions of the
+                        Association for
+                        Computational Linguistics</i>, 10: 785-799. 2022.
+                    </li>
+                    <li>Rasin, Ezer, Iddo Berger, Nur Lan, Itamar Shefi, and Roni Katzir. <a
+                            target="_blank"
+                            href="https://jlm.ipipan.waw.pl/index.php/JLM/article/view/266">Approaching
+                        explanatory adequacy in phonology using Minimum Description Length</a>. <i>Journal
+                        of
+                        Language Modelling 9.1</i> (2021): 17-66
+                    </li>
+
+                    <li>Lan, Nur, Emmanuel Chemla, and Shane Steinert-Threlkeld. <a target="_blank"
+                                                                                    href="https://aclanthology.org/2020.acl-main.433/">On
+                        the Spontaneous Emergence of Discrete and Compositional Signals</a>. <i>Proceedings
+                        of
+                        the 58th Annual Meeting of the Association for Computational Linguistics</i>.
+                        2020.
+                    </li>
+
+                    <li>Katzir, Roni, Nur Lan, and Noa Peled. <a target="_blank"
+                                                                 href="https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/view/874">A
+                        note on the representation and learning of quantificational determiners</a>. <i>Proceedings
+                        of Sinn und Bedeutung</i>. Vol. 24. No. 1. 2020.
+                    </li>
+                    <li>Lan, Nur, Ezer Rasin, and Roni Katzir. <a target="_blank"
+                                                                  href="https://cs.tau.ac.il/~nurlan/files/Lan_Rasin_Katzir_Learning_Morpho-Phonology_Using_a_Genetic_Algorithm_2018_v1.pdf">Learning
+                        Morpho-phonology Using a Genetic Algorithm</a>. Ms. (2019).
+                    </li>
+                    <li>Rasin, Ezer, Nur Lan, and Roni Katzir. <a target="_blank"
+                                                                  href="https://scholarworks.umass.edu/scil/vol2/iss1/45/">Simultaneous
+                        learning of vowel harmony and segmentation</a>. <i>Proceedings of the Society
+                        for
+                        Computation in Linguistics 2.1</i> (2019): 353-357.
+                    </li>
+                    <li>Rasin, Ezer, Iddo Berger, Nur Lan, and Roni Katzir. <a target="_blank"
+                                                                               href="https://en-humanities.tau.ac.il/sites/personal.tau.ac.il/files/media_server/1882/RasinBergerLanKatzir%202018%20Learning%20phonological%20optionality%20and%20opacity%20from%20distributional%20evidence.pdf">Learning
+                        phonological optionality and opacity from distributional evidence</a>. <i>In
+                        Proceedings
+                        of NELS</i>, vol. 48, (2018): 269-282.
+                    </li>
+                    <li>Lan, Nur. <a target="_blank"
+                                     href="https://taucompling.github.io/papers/Nur_Lan_MA_2018.pdf">Learning
+                        morpho-phonology using the Minimum Description Length principle and a genetic
+                        algorithm</a>. <i>MA thesis, Tel Aviv University</i>. (2018)
+                    </li>
+                </ul>
+            </div>
+            <div id="contact" class="section">Contact</div>
+            <div class="section-text email">
+                <a target="_blank" href="mailto:nur.lan@ens.psl.eu">nur.lan@ens.psl.eu</a>
+            </div>
+            <div id="misc" class="section">Misc.</div>
+            <div class="section-text">
+                <ul>
+                    <li><a target="_blank" href="https://wordlehebrew.github.io/">Hebrew Wordle (with Ohad
+                        Ron, moved to Haaretz)</a>
+                    </li>
+                    <div not="il">
+                        <li><a target="_blank"
+                               href="https://www.haaretz.co.il/magazine/the-edge/2020-02-12/ty-article/.premium/0000017f-e3da-d7b2-a77f-e3df9cb80000">Haaretz
+                            article about animal rights organizations in France (in Hebrew)</a>
+                        </li>
+                    </div>
+                    <li><a target="_blank"
+                           href="https://docs.google.com/document/d/1CjZzeQohFUttf5olhXH14KpOZEYibIU3ip8Yk-m9l2E">Programming
+                        style guide</a></li>
+                    <li><a target="_blank" href="http://cs.tau.ac.il/~nurlan/rlworkshop/">Four-in-a-row
+                        Reinforcement Learning player</a></li>
+                    <li><a target="_blank" href="https://github.com/0xnurl/">Github</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+<script>
+    function changeTheme(theme) {
+        const root = document.querySelector(':root');
+
+        if (theme === "light") {
+            root.style.setProperty('--bg-color', 'var(--light-bg-color');
+            root.style.setProperty('--text-color', 'var(--light-text-color');
+            root.style.setProperty('--link-color', 'var(--light-link-color');
+
+            document.getElementById("net-addition").setAttribute("src", "addition.png");
+            document.getElementById("net-anbncn").setAttribute("src", "anbncn.png");
+            document.getElementById("gpt3").setAttribute("src", "gpt3.png");
+        } else {
+            root.style.setProperty('--bg-color', 'var(--dark-bg-color');
+            root.style.setProperty('--text-color', 'var(--dark-text-color');
+            root.style.setProperty('--link-color', 'var(--dark-link-color');
+
+            document.getElementById("net-addition").setAttribute("src", "addition-dark.png");
+            document.getElementById("net-anbncn").setAttribute("src", "anbncn-dark.png");
+            document.getElementById("gpt3").setAttribute("src", "gpt3-dark.png");
+        }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        changeTheme(event.matches ? "dark" : "light");
+    });
+
+    if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+        changeTheme("dark");
+    }
+
+</script>
+</html>
