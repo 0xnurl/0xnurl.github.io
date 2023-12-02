@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Spectral:400,400i,500,600,600i" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Nur,Geffen,Lan,נור,לן,גפן">
-    <meta name="google-site-verification" content="SH_-YuxKI1oeWt41WaLq9V_pn2Rbpfu7FYFbXF4bbis" />
+    <meta name="google-site-verification" content="SH_-YuxKI1oeWt41WaLq9V_pn2Rbpfu7FYFbXF4bbis"/>
     <style>
         :root {
-            --light-bg-color: whitesmoke;
+            --light-bg-color: #fff;
             --light-text-color: #404040;
-            --light-link-color: #4f9243;
+            --light-link-color: #4fa83e;
 
             --dark-bg-color: #242828;
             --dark-text-color: #e7e3dc;
@@ -62,9 +62,8 @@
             }
 
             .section-link {
-                margin: 0 9px 10px 0;
+                margin: 0 15px 10px 0;
             }
-
 
         }
 
@@ -143,6 +142,7 @@
             padding: 0;
         }
 
+
         .header {
             font-size: 1.7em;
             font-weight: 600;
@@ -156,11 +156,13 @@
         }
 
         .section-link {
-            font-size: 1em;
+            font-size: 1.3em;
         }
 
         .section-link a {
             text-decoration: none;
+            font-weight: 600;
+            font-style: italic;
             color: var(--text-color);
         }
 
@@ -171,6 +173,7 @@
         .section-link a:hover {
             color: var(--link-color);
             text-decoration: underline;
+            text-decoration-style: dotted;
             background-color: unset;
         }
 
@@ -194,6 +197,11 @@
 
         .section-text {
             font-size: 1em;
+        }
+
+        .section-links {
+            font-size: 1em;
+            margin: 15px 0 17px 0;
         }
 
         .footer {
@@ -230,13 +238,14 @@
         }
 
         li {
-            margin-bottom: 11px;
+            margin-bottom: 13px;
         }
 
         a {
             padding: 0 1px 0 1px;
             color: var(--link-color);
             text-decoration: none;
+            font-style: italic;
         }
 
         a:visited {
@@ -245,6 +254,7 @@
 
         a:hover {
             text-decoration: underline;
+            text-decoration-style: dotted;
         }
 
         .email {
@@ -292,13 +302,20 @@
                 </div>
             </div>
             <div id="projects" class="section">Projects</div>
-            <div class="subsection">Minimum Description Length Recurrent Neural Networks</div>
-            <div class="subsection-ref">With Michal Geyer, Emmanuel Chemla & Roni Katzir
-            </div>
+
 
         </div>
         <div class="two-column">
             <div class="left-column">
+                            <div class="subsection">Minimum Description Length Recurrent Neural Networks</div>
+            <div class="subsection-ref">With Michal Geyer, Emmanuel Chemla & Roni Katzir
+            </div>
+
+            <div class="section-links">
+                <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00489/112499/Minimum-Description-Length-Recurrent-Neural"
+                   target="_blank">Paper</a>, <a href="https://github.com/taucompling/mdlrnn"
+                                                 target="_blank">Code</a>
+            </div>
                 <div class="section-text">
                     <div class="paragraph">Neural networks are remarkably successful, but still fail on tasks which are
                         very easy for humans,
@@ -322,12 +339,6 @@
                     </div>
                 </div>
 
-                <div class="section-text">
-                    <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00489/112499/Minimum-Description-Length-Recurrent-Neural"
-                       target="_blank">Paper</a>, <a href="https://github.com/taucompling/mdlrnn"
-                                                     target="_blank">Code</a>
-                </div>
-
             </div>
             <div class="right-column">
                 <div class="image-wrapper">
@@ -340,15 +351,22 @@
                 </div>
             </div>
         </div>
+
         <div class="single-column">
-            <div class="subsection" style="margin-top: 25px;">Large Language Models and the Argument From the Poverty of
+
+        </div>
+        <div class="two-column">
+            <div class="left-column">
+                            <div class="subsection" style="margin-top: 25px;">Large Language Models and the Argument From the Poverty of
                 the Stimulus
             </div>
             <div class="subsection-ref" style="font-size: 1em">With Emmanuel Chemla & Roni Katzir
             </div>
-        </div>
-        <div class="two-column">
-            <div class="left-column">
+            <div class="section-links">
+                <a href="https://lingbuzz.net/lingbuzz/006829"
+                   target="_blank">Paper</a>, <a href="https://github.com/0xnurl/llm-poverty-of-stimulus/"
+                                                 target="_blank">Code</a>
+            </div>
                 <div class="section-text">
                     <div class="paragraph">
                         Modern language models are trained on huge corpora that amount to years or even
@@ -366,12 +384,6 @@
                         don't have.
                     </div>
                 </div>
-                <div class="section-text">
-                    <a href="https://lingbuzz.net/lingbuzz/006829"
-                       target="_blank">Paper</a>, <a href="https://github.com/0xnurl/llm-poverty-of-stimulus/"
-                                                     target="_blank">Code</a>
-                </div>
-
 
             </div>
             <div class="right-column">
