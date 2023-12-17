@@ -10,6 +10,7 @@
     <meta name="keywords" content="Nur,Geffen,Lan,נור,לן,גפן">
     <meta name="google-site-verification" content="SH_-YuxKI1oeWt41WaLq9V_pn2Rbpfu7FYFbXF4bbis"/>
     <link rel="icon" type="image/png" href="favicon.png"/>
+    <script src="esheep.js" ></script>
     <style>
         :root {
             --light-bg-color: #fff;
@@ -64,6 +65,10 @@
 
             .section-link {
                 margin: 0 15px 10px 0;
+            }
+
+            #pi {
+                display: none
             }
 
         }
@@ -243,6 +248,17 @@
             margin-bottom: 25px;
         }
 
+        #pi {
+            font-family: "Times New Roman";
+            color: var(--text-color);
+            opacity: 0.3;
+            font-size:0.7em;
+            position: fixed;
+            bottom: 17px;
+            right: 27px;
+            cursor: pointer;
+        }
+
 
         li {
             margin-bottom: 15px;
@@ -271,6 +287,11 @@
 
 
 </head>
+<script>
+    function sheep() {
+        new eSheep().Start();
+    }
+</script>
 <body>
 <div class="main-wrapper">
     <div class="inner-wrapper">
@@ -473,7 +494,7 @@
             <div id="misc" class="section">Misc.</div>
             <div class="section-text">
                 <ul>
-                    <li><a target="_blank" href="https://wordlehebrew.github.io/">Hebrew Wordle (with Ohad
+                    <li><a target="_blank" href="https://www.haaretz.co.il/riddles/ty-page/haaretz-wordle">Hebrew Wordle (with Ohad
                         Ron, moved to Haaretz)</a>
                     </li>
                     <div not="il">
@@ -495,6 +516,8 @@
 
     </div>
 </div>
+
+<div id="pi" onclick="sheep()">π</div>
 
 </body>
 
