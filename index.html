@@ -520,40 +520,4 @@
 <div id="pi" onclick="sheep()">π</div>
 
 </body>
-
-<script>
-    function changeTheme(theme) {
-        const root = document.querySelector(':root');
-
-        if (theme === "light") {
-            root.style.setProperty('--bg-color', 'var(--light-bg-color');
-            root.style.setProperty('--text-color', 'var(--light-text-color');
-            root.style.setProperty('--link-color', 'var(--light-link-color');
-
-            document.getElementById("net-addition").setAttribute("src", "addition.png");
-            document.getElementById("net-anbncn").setAttribute("src", "anbncn.png");
-            document.getElementById("gpt3").setAttribute("src", "gpt3.png");
-        } else {
-            root.style.setProperty('--bg-color', 'var(--dark-bg-color');
-            root.style.setProperty('--text-color', 'var(--dark-text-color');
-            root.style.setProperty('--link-color', 'var(--dark-link-color');
-
-            document.getElementById("net-addition").setAttribute("src", "addition-dark.png");
-            document.getElementById("net-anbncn").setAttribute("src", "anbncn-dark.png");
-            document.getElementById("gpt3").setAttribute("src", "gpt3-dark.png");
-        }
-    }
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-        changeTheme(event.matches ? "dark" : "light");
-    });
-
-    if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-        changeTheme("dark");
-    }
-
-</script>
 </html>
