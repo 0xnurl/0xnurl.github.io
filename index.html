@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Spectral:400,400i,500,600,600i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:200,300,400,400i,500,600,600i" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Nur,Geffen,Lan,נור,לן,גפן">
     <meta name="google-site-verification" content="SH_-YuxKI1oeWt41WaLq9V_pn2Rbpfu7FYFbXF4bbis"/>
@@ -14,8 +14,8 @@
     <style>
         :root {
             --light-bg-color: #fff;
-            --light-text-color: #404040;
-            --light-link-color: #4fa83e;
+            --light-text-color: #545454;
+            --light-link-color: #1aa121;
 
             --dark-bg-color: #242828;
             --dark-text-color: #e7e3dc;
@@ -130,13 +130,16 @@
         }
 
         body {
-            font-family: "Spectral", serif;
+            font-family: "Rubik", sans-serif;
             color: var(--text-color);
             margin: 0;
             height: 100%;
             padding: 0;
+            font-weight: 300;
             background-color: var(--bg-color);
-            font-size: 19px;
+            font-size: 1.1em;
+            line-height: 1.9em;
+            letter-spacing: 0.05em;
         }
 
         .main-wrapper {
@@ -157,19 +160,19 @@
         .sections-wrapper {
             display: flex;
             flex-direction: row;
-            margin-top: 23px;
+            margin-top: 35px;
             flex-flow: wrap;
             border-top: 1px;
         }
 
         .section-link {
             font-size: 1.3em;
+            font-weight: 300;
         }
 
         .section-link a {
             text-decoration: none;
-            font-weight: 600;
-            font-style: italic;
+            font-weight: 400;
             color: var(--text-color);
         }
 
@@ -185,10 +188,9 @@
         }
 
         .section {
-            margin-top: 35px;
-            font-size: 1.3em;
+            margin: 35px 0 15px 0;
+            font-size: 1.4em;
             font-weight: 600;
-            font-style: italic;
         }
 
         .subsection {
@@ -208,16 +210,7 @@
 
         .section-links {
             font-size: 1em;
-            margin: 15px 0 17px 0;
-        }
-
-        .footer {
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
-            margin-top: 35px;
-            font-size: 1em;
-            font-style: italic;
+            margin: 15px 0 9px 0;
         }
 
         .two-column {
@@ -248,11 +241,15 @@
             margin-bottom: 25px;
         }
 
+        .inline-code {
+            font-family: monospace;
+        }
+
         #pi {
             font-family: "Times New Roman";
             color: var(--text-color);
             opacity: 0.3;
-            font-size: 1.1em;
+            font-size: 1.3em;
             position: fixed;
             bottom: 17px;
             right: 27px;
@@ -268,7 +265,6 @@
             padding: 0 1px 0 1px;
             color: var(--link-color);
             text-decoration: none;
-            font-style: italic;
         }
 
         a:visited {
@@ -307,47 +303,58 @@
             <div id="about" class="section">About</div>
 
             <div class="section-text">
-                <div class="paragraph">I am a PhD candidate in linguistics and cognitive science at the Ecole Normale
-                    Sup&eacute;rieure
-                    in Paris and Tel Aviv University, co-advised by <a target="_blank"
-                                                                       href="http://www.emmanuel.chemla.free.fr/">Emmanuel
+                <div class="paragraph">I am a post-doctoral researcher at the Ecole Normale
+                    Sup&eacute;rieure in Paris (institut Jean Nicod). I completed my PhD in linguistics and cognitive
+                    science at ENS and Tel
+                    Aviv University, where I was co-advised by <a target="_blank"
+                                                                  href="http://www.emmanuel.chemla.free.fr/">Emmanuel
                         Chemla</a> (ENS) and <a target="_blank"
                                                 href="https://english.tau.ac.il/profile/rkatzir">Roni
-                        Katzir</a> (TAU). My PhD is funded by the <a target="_blank"
-                                                                     href="https://ed3c.sorbonne-universite.fr/">ED3C</a>.
+                        Katzir</a> (TAU). My dissertation can be found <a href="files/Nur_Lan_ENS_Thesis_final.pdf"
+                                                                          target="_blank">here</a>.
+                    <div class="paragraph">I am mainly interested in building computational models that try to learn
+                        natural
+                        language in the same way we think humans do. I am also interested in the evolution of language,
+                        formal language
+                        theory, information theory, as well as in animal linguistics and comparative cognition, and I
+                        like combining these fields in thinking about the origins of the human language capacity.
+                    </div>
+                    <div class="paragraph">I did my master's in <a target="_blank"
+                                                                   href="https://taucompling.github.io/">computational
+                        linguistics</a> under the supervision of Roni Katzir, after completing a bachelor's
+                        degree in Computer Science (double-major with a BA in Film), both at Tel Aviv University. In
+                        between I worked for several tech companies in Tel Aviv, and as an editor and writer in Israeli
+                        press.
+                    </div>
                 </div>
-                <div class="paragraph">I am mainly interested in building computational models that try to learn natural
-                    language in the same way we think humans do. I am also interested in the evolution of language,
-                    formal language
-                    theory, information theory, as well as in animal linguistics and comparative cognition, and I
-                    like combining these fields in thinking about the origins of the human language capacity.
-                </div>
-                <div class="paragraph">I did my master's in <a target="_blank" href="https://taucompling.github.io/">computational
-                    linguistics</a> under the supervision of Roni Katzir, after completing a bachelor's
-                    degree in Computer Science (double-major with a BA in Film), both at Tel Aviv University. In
-                    between I worked for several tech companies in Tel Aviv, and as an editor and writer in Israeli
-                    press.
-                </div>
+                <div id="projects" class="section">Projects</div>
+
+
             </div>
-            <div id="projects" class="section">Projects</div>
-
-
         </div>
         <div class="two-column">
             <div class="left-column">
                 <div class="subsection">Minimum Description Length Recurrent Neural Networks</div>
                 <div class="subsection-ref">With Michal Geyer, Emmanuel Chemla & Roni Katzir
                 </div>
-
                 <div class="section-links">
                     <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00489/112499/Minimum-Description-Length-Recurrent-Neural"
                        target="_blank">Paper</a>, <a href="https://github.com/taucompling/mdlrnn"
-                                                     target="_blank">Code</a>
+                                                     target="_blank">Code</a>, <a
+                        href="https://www.youtube.com/watch?v=oZX-1QybZEQ"
+                        target="_blank">Talk</a>
                 </div>
+            </div>
+        </div>
+        <div class="two-column">
+            <div class="left-column">
+
                 <div class="section-text">
-                    <div class="paragraph">Neural networks are remarkably successful, but still fail on tasks which are
+                    <div class="paragraph">Neural networks are remarkably successful, but still fail on tasks which
+                        are
                         very easy for humans,
-                        like understanding simple regularities such as <i>10101010...</i> or <i>aaabbb...</i>, and
+                        like understanding simple regularities such as <span class="inline-code">10101010...</span>
+                        or <span class="inline-code">aaabbb...</span>, and
                         learning basic arithmetic operations like addition and multiplication.
                     </div>
                     <div class="paragraph">To make networks generalize better, we replace standard objectives with a
@@ -355,13 +362,17 @@
                         Minimum Description Length principle (MDL), which balances the network's architecture size
                         with its accuracy.
                     </div>
-                    <div class="paragraph">Using an evolutionary architecture search guided by MDL, we find small and
+                    <div class="paragraph">Using an evolutionary architecture search guided by MDL, we find small
+                        and
                         perfect networks that can handle tasks which are
                         notoriously hard
                         for traditional networks, like basic addition, and recognition of formal languages such as
-                        Dyck-1, <i>a<sup>n</sup>b<sup>n</sup></i>,
-                        <i>a<sup>n</sup>b<sup>2n</sup></i>, <i>a<sup>n</sup>b<sup>m</sup>c<sup>n+m</sup></i>,
-                        and <i>a<sup>n</sup>b<sup>n</sup>c<sup>n</sup></i>. MDL networks are very small, and often
+                        <span class="inline-code">Dyck-1</span> , <span
+                                class="inline-code">a<sup>n</sup>b<sup>n</sup></span>,
+                        <span class="inline-code">a<sup>n</sup>b<sup>2n</sup></span>, <span
+                                class="inline-code">a<sup>n</sup>b<sup>m</sup>c<sup>n+m</sup></span>,
+                        and <span class="inline-code">a<sup>n</sup>b<sup>n</sup>c<sup>n</sup></span>. MDL networks
+                        are very small, and often
                         contain only one or two hidden units, which makes it possible to prove that they are correct
                         for all strings. No other neural network that we know of has been proven do to that.
                     </div>
@@ -375,14 +386,13 @@
                 </div>
                 <div class="image-wrapper">
                     <img id="net-anbncn" alt="anbncn network" class="image" src="anbncn.png">
-                    <div class="image-caption"><i>a<sup>n</sup>b<sup>n</sup>c<sup>n</sup></i> network</div>
+                    <div class="image-caption"><span class="inline-code">a<sup>n</sup>b<sup>n</sup>c<sup>n</sup></span>
+                        network
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="single-column">
-
-        </div>
         <div class="two-column">
             <div class="left-column">
                 <div class="subsection" style="margin-top: 25px;">Large Language Models and the Argument From the
@@ -396,10 +406,16 @@
                        target="_blank">Paper</a>, <a href="https://github.com/0xnurl/llm-poverty-of-stimulus/"
                                                      target="_blank">Code</a>
                 </div>
+            </div>
+        </div>
+        <div class="two-column">
+            <div class="left-column">
+
                 <div class="section-text">
                     <div class="paragraph">
                         Modern language models are trained on huge corpora that amount to years or even
-                        lifetimes of human linguistic experience. Can we use this fact to learn about the initial state
+                        lifetimes of human linguistic experience. Can we use this fact to learn about the initial
+                        state
                         of a human child acquiring language?
                     </div>
                     <div class="paragraph">
@@ -408,7 +424,8 @@
                         regarding important syntactic constraints.
                         We find that all models fail to acquire an adequate knowledge of these phenomena,
                         delivering predictions that clash with the judgments of human speakers. Since these models
-                        are trained on data that go above and beyond the linguistic experience of children, our findings
+                        are trained on data that go above and beyond the linguistic experience of children, our
+                        findings
                         support the claim that children are equipped with innate linguistic biases that these models
                         don't have.
                     </div>
@@ -420,7 +437,8 @@
                     <img class="image"
                          alt="Surprisal values for 'Who did the fact that Mary remembered surprise yesterday/*you'"
                          style="width:95%;" id="gpt3" src="gpt3.png">
-                    <div class="image-caption">GPT-3's surprisal values for a grammatical parasitic gap sentence (blue)
+                    <div class="image-caption">GPT-3's surprisal values for a grammatical parasitic gap sentence
+                        (blue)
                         and its ungrammatical variant (red)
                     </div>
                 </div>
@@ -434,7 +452,13 @@
                     <li class="bib">Lan, Nur, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
                                                                                    href="https://arxiv.org/abs/2402.10013">Bridging
                         the Empirical-Theoretical Gap in Neural Network Formal Language Learning Using Minimum
-                        Description Length.</a> <i>In review. 2024.
+                        Description Length.</a> <i>Accepted to ACL 2024 main conference.</i>
+                    </li>
+
+                    <li class="bib">Lan, Nur, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
+                                                                                   href="https://direct.mit.edu/ling/article-abstract/doi/10.1162/ling_a_00533/120382/Large-Language-Models-and-the-Argument-from-the?redirectedFrom=fulltext">BridgingLarge
+                        Language Models and the Argument From the Poverty of the Stimulus.</a> <i>Linguistic
+                        Inquiry.</i> 2024. To appear.
                     </li>
 
                     <li class="bib">Lan, Nur, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
@@ -501,7 +525,8 @@
             <div id="misc" class="section">Misc.</div>
             <div class="section-text">
                 <ul>
-                    <li><a target="_blank" href="https://www.haaretz.co.il/riddles/ty-page/haaretz-wordle">Hebrew Wordle
+                    <li><a target="_blank" href="https://www.haaretz.co.il/riddles/ty-page/haaretz-wordle">Hebrew
+                        Wordle
                         (with Ohad
                         Ron, moved to Haaretz)</a>
                     </li>
