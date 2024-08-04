@@ -67,7 +67,7 @@
 
         @media screen and (min-width: 800px) {
             .inner-wrapper {
-                padding: 50px 105px 95px 105px;
+                padding: 50px 115px 95px 115px;
             }
 
             .single-column {
@@ -137,6 +137,9 @@
             left: 0;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
 
@@ -427,7 +430,7 @@
                     <div class="image-wrapper">
                         <img class="image" id="net-addition" alt="addition network" class="image"
                              src="addition.png">
-                        <div class="image-caption">Addition network</div>
+                        <div class="image-caption">Binary addition network found through neuroevolution guided by MDL</div>
                         <!--                        <div>-->
                         <!--                            <img id="net-anbncn" alt="anbncn network" class="image" src="anbncn.png">-->
                         <!--                            <div class="image-caption"><span-->
@@ -438,23 +441,22 @@
                     </div>
 
                     <div class="section-text">
-                        <div class="paragraph">Neural networks are remarkably successful, but still fail on tasks which
-                            are
-                            very easy for humans,
-                            like understanding simple regularities such as <span class="inline-code">10101010...</span>
+                        <div class="paragraph">Neural networks are successful at many tasks but still fail on tasks that
+                            are very easy for humans,
+                            like recognizing simple regularities such as <span class="inline-code">10101010...</span>
                             or <span class="inline-code">aaabbb...</span>, and
-                            learning basic arithmetic operations like addition and multiplication.
+                            learning basic arithmetics.
                         </div>
                         <div class="paragraph">To make networks generalize better, we replace standard objectives with a
                             computable version of Kolmogorov Complexity, the
                             Minimum Description Length principle (MDL), which balances the network's architecture size
                             with its accuracy.
                         </div>
-                        <div class="paragraph">Using an evolutionary architecture search guided by MDL, we find small
+                        <div class="paragraph">Using neuroevolution guided by MDL, we find small
                             and
                             perfect networks that can handle tasks which are
                             notoriously hard
-                            for traditional networks, like basic addition, and recognition of formal languages such as
+                            for traditional networks like basic addition and formal languages such as
                             <span class="inline-code">Dyck-1</span> , <span
                                     class="inline-code">a<sup>n</sup>b<sup>n</sup></span>,
                             <span class="inline-code">a<sup>n</sup>b<sup>2n</sup></span>, <span
@@ -463,6 +465,42 @@
                             are very small, and often
                             contain only one or two hidden units, which makes it possible to prove that they are correct
                             for all strings. No other neural network that we know of has been proven do to that.
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="subsection">Bridging the Empirical-Theoretical Gap in Formal Language Learning</div>
+                    <div class="subsection-ref">With Emmanuel Chemla & Roni Katzir
+                    </div>
+                    <div class="section-links">
+                        <a href="https://arxiv.org/abs/2402.10013"
+                           target="_blank">Paper</a>, <a href="https://github.com/0xnurl/mdl-lstm/"
+                                                         target="_blank">Code</a>
+                    </div>
+
+
+                    <div class="image-wrapper">
+                        <img class="image" style="min-width: 85%" id="net-addition" alt="addition network"
+                             src="https://github.com/0xnurl/mdl-lstm/blob/main/assets/regs.png?raw=true">
+                        <div class="image-caption">L1 and L2 regularization surfaces compared with MDL</div>
+                    </div>
+
+                    <div class="section-text">
+                        <div class="paragraph">
+                            Neural nets are known to be able to perfectly represent formal languages such as <span
+                                class="inline-code">a<sup>n</sup>b<sup>n</sup></span> and Dyck.
+                            Yet such networks are never found using standard techniques. How come?
+                        </div>
+                        <div class="paragraph">
+                            We manually build an optimal <span
+                                class="inline-code">a<sup>n</sup>b<sup>n</sup></span> LSTM and find that it is not an
+                            optimum of the standard
+                            cross-entropy loss, even with regularization terms that according to common wisdom should
+                            lead to good
+                            generalization.
+                            Meta-heuristics like early-stopping and dropout don't help either.
+                            However, moving to the Minimum Description Length objective leads to the perfect target
+                            network.
                         </div>
                     </div>
                 </div>
