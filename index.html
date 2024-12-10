@@ -39,7 +39,6 @@
 
             .two-column {
                 flex-direction: column;
-                max-width: 95%;
             }
 
             .right-column {
@@ -52,22 +51,28 @@
             }
 
             .left-column {
-                max-width: 95%;
             }
 
             .section-link {
                 margin: 0 15px 10px 0;
             }
 
+            #papers-main, #papers-link-main {
+                display: none;
+            }
+
+            #papers-copy, #papers-link-copy {
+                display: block
+            }
+
             #pi {
                 display: none
             }
-
         }
 
         @media screen and (min-width: 800px) {
             .inner-wrapper {
-                padding: 50px 115px 95px 115px;
+                padding: 70px 115px 95px 115px;
             }
 
             .single-column {
@@ -77,7 +82,7 @@
             .two-column {
                 flex-direction: row;
                 max-width: 95%;
-                gap: 50px;
+                gap: 70px;
             }
 
             .right-column {
@@ -97,6 +102,13 @@
                 margin: 0 23px 10px 0;
             }
 
+            #papers-main, #papers-link-main {
+                display: block;
+            }
+
+            #papers-copy, #papers-link-copy {
+                display: none
+            }
         }
 
 
@@ -111,6 +123,13 @@
                 gap: 100px;
             }
 
+            #papers-main, #papers-link-main {
+                display: block;
+            }
+
+            #papers-copy, #papers-link-copy {
+                display: none
+            }
         }
 
         html {
@@ -186,7 +205,7 @@
         }
 
         .subsection {
-            margin-top: 5px;
+            margin-top: 15px;
             font-size: 1.2em;
             font-weight: 500;
         }
@@ -296,9 +315,10 @@
             <div class="sections-wrapper">
                 <div class="section-link"><a href="#about">About</a></div>
                 <div class="section-link"><a href="#projects">Projects</a></div>
-                <div class="section-link"><a href="#papers">Papers</a></div>
+                <div class="section-link"><a id="papers-link-main" href="#papers-main">Papers</a></div>
                 <div class="section-link"><a href="#contact">Contact</a></div>
                 <div class="section-link"><a href="#misc">Misc.</a></div>
+                <div class="section-link"><a id="papers-link-copy" href="#papers-copy">Papers</a></div>
             </div>
 
         </div>
@@ -334,80 +354,85 @@
                             press.
                         </div>
                     </div>
-
                 </div>
 
-                <div id="papers" class="section">Papers and manuscripts</div>
-                <div class="section-text">
-                    <ul>
-                        <li class="bib">Lan, Nur, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
-                                                                                       href="https://aclanthology.org/2024.acl-long.713">Bridging
-                            the Empirical-Theoretical Gap in Neural Network Formal Language Learning Using Minimum
-                            Description Length.</a> In <i>Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics</i>. Association for Computational Linguistics. 2024.
-                        </li>
+                <div id="papers-main">
+                    <div id="papers" class="section">Papers and manuscripts</div>
+                    <div class="section-text">
+                        <ul>
+                            <li class="bib">Lan, Nur, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
+                                                                                           href="https://aclanthology.org/2024.acl-long.713">Bridging
+                                the Empirical-Theoretical Gap in Neural Network Formal Language Learning Using Minimum
+                                Description Length.</a> In <i>Proceedings of the 62nd Annual Meeting of the Association
+                                for
+                                Computational Linguistics</i>. Association for Computational Linguistics. 2024.
+                            </li>
 
-                        <li class="bib">Lan, Nur, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
-                                                                                       href="https://direct.mit.edu/ling/article-abstract/doi/10.1162/ling_a_00533/120382/Large-Language-Models-and-the-Argument-from-the?redirectedFrom=fulltext">Large
-                            Language Models and the Argument From the Poverty of the Stimulus.</a> <i>Linguistic
-                            Inquiry.</i> 2024. To appear.
-                        </li>
+                            <li class="bib">Lan, Nur, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
+                                                                                           href="https://direct.mit.edu/ling/article-abstract/doi/10.1162/ling_a_00533/120382/Large-Language-Models-and-the-Argument-from-the?redirectedFrom=fulltext">Large
+                                Language Models and the Argument From the Poverty of the Stimulus.</a> <i>Linguistic
+                                Inquiry.</i> 2024. To appear.
+                            </li>
 
-                        <li class="bib">Lan, Nur, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
-                                                                                       href="https://arxiv.org/abs/2308.08253">Benchmarking
-                            Neural Network Generalization for Grammar Induction.</a> <i>Proceedings of the 2023 CLASP
-                            Conference on Learning with Small Data (LSD)</i>: Association for Computational Linguistics,
-                            131–40. 2023.
-                        </li>
+                            <li class="bib">Lan, Nur, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
+                                                                                           href="https://arxiv.org/abs/2308.08253">Benchmarking
+                                Neural Network Generalization for Grammar Induction.</a> <i>Proceedings of the 2023
+                                CLASP
+                                Conference on Learning with Small Data (LSD)</i>: Association for Computational
+                                Linguistics,
+                                131–40. 2023.
+                            </li>
 
-                        <li class="bib">Lan, Nur, Michal Geyer, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
-                                                                                                     href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00489/112499/Minimum-Description-Length-Recurrent-Neural">Minimum
-                            Description Length Recurrent Neural Networks</a>. <i>Transactions of the
-                            Association for
-                            Computational Linguistics</i>, 10: 785-799. 2022.
-                        </li>
-                        <li class="bib">Rasin, Ezer, Iddo Berger, Nur Lan, Itamar Shefi, and Roni Katzir. <a
-                                target="_blank"
-                                href="https://jlm.ipipan.waw.pl/index.php/JLM/article/view/266">Approaching
-                            explanatory adequacy in phonology using Minimum Description Length</a>. <i>Journal
-                            of
-                            Language Modelling 9.1</i> (2021): 17-66
-                        </li>
+                            <li class="bib">Lan, Nur, Michal Geyer, Emmanuel Chemla, and Roni Katzir. <a target="_blank"
+                                                                                                         href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00489/112499/Minimum-Description-Length-Recurrent-Neural">Minimum
+                                Description Length Recurrent Neural Networks</a>. <i>Transactions of the
+                                Association for
+                                Computational Linguistics</i>, 10: 785-799. 2022.
+                            </li>
+                            <li class="bib">Rasin, Ezer, Iddo Berger, Nur Lan, Itamar Shefi, and Roni Katzir. <a
+                                    target="_blank"
+                                    href="https://jlm.ipipan.waw.pl/index.php/JLM/article/view/266">Approaching
+                                explanatory adequacy in phonology using Minimum Description Length</a>. <i>Journal
+                                of
+                                Language Modelling 9.1</i> (2021): 17-66
+                            </li>
 
-                        <li class="bib">Lan, Nur, Emmanuel Chemla, and Shane Steinert-Threlkeld. <a target="_blank"
-                                                                                                    href="https://aclanthology.org/2020.acl-main.433/">On
-                            the Spontaneous Emergence of Discrete and Compositional Signals</a>. <i>Proceedings
-                            of
-                            the 58th Annual Meeting of the Association for Computational Linguistics</i>.
-                            2020.
-                        </li>
+                            <li class="bib">Lan, Nur, Emmanuel Chemla, and Shane Steinert-Threlkeld. <a target="_blank"
+                                                                                                        href="https://aclanthology.org/2020.acl-main.433/">On
+                                the Spontaneous Emergence of Discrete and Compositional Signals</a>. <i>Proceedings
+                                of
+                                the 58th Annual Meeting of the Association for Computational Linguistics</i>.
+                                2020.
+                            </li>
 
-                        <li class="bib">Katzir, Roni, Nur Lan, and Noa Peled. <a target="_blank"
-                                                                                 href="https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/view/874">A
-                            note on the representation and learning of quantificational determiners</a>. <i>Proceedings
-                            of Sinn und Bedeutung</i>. Vol. 24. No. 1. 2020.
-                        </li>
-                        <li class="bib">Lan, Nur, Ezer Rasin, and Roni Katzir. <a target="_blank"
-                                                                                  href="https://cs.tau.ac.il/~nurlan/files/Lan_Rasin_Katzir_Learning_Morpho-Phonology_Using_a_Genetic_Algorithm_2018_v1.pdf">Learning
-                            Morpho-phonology Using a Genetic Algorithm</a>. Ms. (2019).
-                        </li>
-                        <li class="bib">Rasin, Ezer, Nur Lan, and Roni Katzir. <a target="_blank"
-                                                                                  href="https://scholarworks.umass.edu/scil/vol2/iss1/45/">Simultaneous
-                            learning of vowel harmony and segmentation</a>. <i>Proceedings of the Society
-                            for
-                            Computation in Linguistics 2.1</i> (2019): 353-357.
-                        </li>
-                        <li class="bib">Rasin, Ezer, Iddo Berger, Nur Lan, and Roni Katzir. <a target="_blank"
-                                                                                               href="https://en-humanities.tau.ac.il/sites/personal.tau.ac.il/files/media_server/1882/RasinBergerLanKatzir%202018%20Learning%20phonological%20optionality%20and%20opacity%20from%20distributional%20evidence.pdf">Learning
-                            phonological optionality and opacity from distributional evidence</a>. <i>In
-                            Proceedings
-                            of NELS</i>, vol. 48, (2018): 269-282.
-                        </li>
-                        <li class="bib">Lan, Nur. <a target="_blank"
-                                                     href="https://taucompling.github.io/papers/Nur_Lan_MA_2018.pdf">Learning
-                            morpho-phonology using the Minimum Description Length principle and a genetic
-                            algorithm</a>. <i>MA thesis, Tel Aviv University</i>. (2018)
-                        </li>
-                    </ul>
+                            <li class="bib">Katzir, Roni, Nur Lan, and Noa Peled. <a target="_blank"
+                                                                                     href="https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/view/874">A
+                                note on the representation and learning of quantificational determiners</a>. <i>Proceedings
+                                of Sinn und Bedeutung</i>. Vol. 24. No. 1. 2020.
+                            </li>
+                            <li class="bib">Lan, Nur, Ezer Rasin, and Roni Katzir. <a target="_blank"
+                                                                                      href="https://cs.tau.ac.il/~nurlan/files/Lan_Rasin_Katzir_Learning_Morpho-Phonology_Using_a_Genetic_Algorithm_2018_v1.pdf">Learning
+                                Morpho-phonology Using a Genetic Algorithm</a>. Ms. (2019).
+                            </li>
+                            <li class="bib">Rasin, Ezer, Nur Lan, and Roni Katzir. <a target="_blank"
+                                                                                      href="https://scholarworks.umass.edu/scil/vol2/iss1/45/">Simultaneous
+                                learning of vowel harmony and segmentation</a>. <i>Proceedings of the Society
+                                for
+                                Computation in Linguistics 2.1</i> (2019): 353-357.
+                            </li>
+                            <li class="bib">Rasin, Ezer, Iddo Berger, Nur Lan, and Roni Katzir. <a target="_blank"
+                                                                                                   href="https://en-humanities.tau.ac.il/sites/personal.tau.ac.il/files/media_server/1882/RasinBergerLanKatzir%202018%20Learning%20phonological%20optionality%20and%20opacity%20from%20distributional%20evidence.pdf">Learning
+                                phonological optionality and opacity from distributional evidence</a>. <i>In
+                                Proceedings
+                                of NELS</i>, vol. 48, (2018): 269-282.
+                            </li>
+                            <li class="bib">Lan, Nur. <a target="_blank"
+                                                         href="https://taucompling.github.io/papers/Nur_Lan_MA_2018.pdf">Learning
+                                morpho-phonology using the Minimum Description Length principle and a genetic
+                                algorithm</a>. <i>MA thesis, Tel Aviv University</i>. (2018)
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
 
@@ -430,7 +455,8 @@
                     <div class="image-wrapper">
                         <img class="image" id="net-addition" alt="addition network" class="image"
                              src="addition.png">
-                        <div class="image-caption">Binary addition network found through neuroevolution guided by MDL
+                        <div class="image-caption">Binary addition network found through neuroevolution guided by
+                            MDL
                         </div>
                         <!--                        <div>-->
                         <!--                            <img id="net-anbncn" alt="anbncn network" class="image" src="anbncn.png">-->
@@ -444,13 +470,16 @@
                     <div class="section-text">
                         <div class="paragraph">Neural networks still struggle with tasks that
                             are very easy for humans,
-                            like recognizing simple regularities such as <span class="inline-code">10101010...</span>
+                            like recognizing simple regularities such as <span
+                                    class="inline-code">10101010...</span>
                             or <span class="inline-code">aaabbb...</span>, and
                             learning basic arithmetic.
                         </div>
-                        <div class="paragraph">To make networks generalize better, we replace standard objectives with a
+                        <div class="paragraph">To make networks generalize better, we replace standard objectives
+                            with a
                             computable version of Kolmogorov Complexity, the
-                            Minimum Description Length principle (MDL), which balances the network's architecture size
+                            Minimum Description Length principle (MDL), which balances the network's architecture
+                            size
                             with its accuracy.
                         </div>
                         <div class="paragraph">Using neuroevolution guided by MDL, we find small
@@ -462,9 +491,11 @@
                                     class="inline-code">a<sup>n</sup>b<sup>n</sup></span>,
                             <span class="inline-code">a<sup>n</sup>b<sup>2n</sup></span>, <span
                                     class="inline-code">a<sup>n</sup>b<sup>m</sup>c<sup>n+m</sup></span>,
-                            and <span class="inline-code">a<sup>n</sup>b<sup>n</sup>c<sup>n</sup></span>. MDL networks
+                            and <span class="inline-code">a<sup>n</sup>b<sup>n</sup>c<sup>n</sup></span>. MDL
+                            networks
                             are very small, and often
-                            contain only one or two hidden units, which makes it possible to prove that they are correct
+                            contain only one or two hidden units, which makes it possible to prove that they are
+                            correct
                             for all strings. No other neural network that we know of has been proven do to that.
                         </div>
                     </div>
@@ -494,9 +525,11 @@
                         </div>
                         <div class="paragraph">
                             We manually build an optimal <span
-                                class="inline-code">a<sup>n</sup>b<sup>n</sup></span> LSTM and find that it is not an
+                                class="inline-code">a<sup>n</sup>b<sup>n</sup></span> LSTM and find that it is not
+                            an
                             optimum of the standard
-                            cross-entropy loss, even with regularization terms that according to common wisdom should
+                            cross-entropy loss, even with regularization terms that according to common wisdom
+                            should
                             lead to good
                             generalization.
                             Meta-heuristics like early-stopping and dropout don't help either.
@@ -507,7 +540,7 @@
                 </div>
 
                 <div class="project">
-                    <div class="subsection" style="margin-top: 25px;">Large Language Models and the Argument From the
+                    <div class="subsection">Large Language Models and the Argument From the
                         Poverty of
                         the Stimulus
                     </div>
@@ -530,7 +563,8 @@
                     <div class="section-text">
                         <div class="paragraph">
                             Modern language models are trained on huge corpora that amount to years or even
-                            lifetimes of human linguistic experience. Can we use this fact to learn about the initial
+                            lifetimes of human linguistic experience. Can we use this fact to learn about the
+                            initial
                             state
                             of a human child acquiring language?
                         </div>
@@ -539,10 +573,12 @@
                             language models, including GPT-j and GPT-3,
                             regarding important syntactic constraints.
                             We find that all models fail to acquire an adequate knowledge of these phenomena,
-                            delivering predictions that clash with the judgments of human speakers. Since these models
+                            delivering predictions that clash with the judgments of human speakers. Since these
+                            models
                             are trained on data that go above and beyond the linguistic experience of children, our
                             findings
-                            support the claim that children are equipped with innate linguistic biases that these models
+                            support the claim that children are equipped with innate linguistic biases that these
+                            models
                             don't have.
                         </div>
                     </div>
@@ -576,6 +612,8 @@
                     <a target="_blank" href="mailto:nur.lan@ens.psl.eu">nur.lan@ens.psl.eu</a>
                 </div>
 
+                <div id="papers-copy"></div>
+
             </div>
         </div>
 
@@ -584,6 +622,10 @@
 </div>
 
 <div id="pi" onclick="sheep()">π</div>
+
+<script>
+    document.getElementById("papers-copy").innerHTML = document.getElementById("papers-main").innerHTML;
+</script>
 
 </body>
 </html>
